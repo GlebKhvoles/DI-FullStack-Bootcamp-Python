@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 230, 176);
+    
+}
+
+.row {
+    margin: 10px 20px;
+    display: flex;
+
+}
+
+.new {
+    background-color: green; 
+    float: left;
+}
+
+.discount {
+    background-color: red; 
+    float: right;
+}
+
+.new, .discount {
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 250%;
+    border-radius: 50%;
+}
+
+.container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.container:hover {
+    box-shadow: 0 0 10px 2px rgb(197, 193, 193)
+}
+
+#container-1 > .cover {
+    background-image: url(image1.png);
+}
+
+#container-2 > .cover {
+    background-image: url(image2.png);
+    
+}
+
+#container-3 > .cover {
+    background-image: url(image3.png);
+    
+}
+
+#container-4 > .cover {
+    background-image: url(image4.png);
+    
+}
+
+.cover {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:260px;
+    width:200px;
+}
+
+.name {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.price {
+    margin: 5px;
+}
+
+.price-new {
+    font-weight: bold;
+    color: green;
+}
+
+.price-old {
+    font-size: 13px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+
+button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5%;
+    font-weight: bold;
+    color: gray;
+    height: 30px;
+}
+
+.info {
+    text-align: center;
+}
