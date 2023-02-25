@@ -41,14 +41,14 @@ class Dog():
 		self.power = self.run_speed() * self.weight
 	def bark(self):
 		bark = print(f'{self.name} is barking')
-		return bark
+		return bark # why you retuing the value of the print
 	def run_speed(self):
 		speed = (self.weight/self.age*10)
 		return speed
 	def fight(self, other_dog):
 		if self.power > other_dog.power:
 			return f'{self.name} is the winner'
-		else:
+		else: # this else is redundant because you are doing return line before
 			return f'{other_dog} is the winner'
 
 Dog1 = Dog('Jose', 6, 25)
