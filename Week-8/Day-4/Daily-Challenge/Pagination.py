@@ -4,7 +4,7 @@ class Pagination:
 		self.page_size = int(page_size)
 		self.pages = {}
 		page_slice = slice(int(page_size))
-		i = 1
+		i = 1 # extract this code to function like prepare pages
 		while len(self.items) > 0:
 			self.pages[i] = items[page_slice]
 			del items[0:int(page_size)]
