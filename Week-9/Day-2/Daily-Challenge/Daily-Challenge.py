@@ -5,13 +5,13 @@ class Circle:
     @classmethod
     def create_by_radius(cls, radius):
         return cls(math.pi * (radius**2))
-    @classmethod
+    @classmethod # great solution
     def create_by_diameter(cls, diameter):
         return cls(math.pi / 4 * (diameter**2))
     def __repr__(self):
         return f"I'm circle with area equal {self.area}"
     def __add__(self, other):
-        if isinstance(other, Circle):
+        if isinstance(other, Circle): # what if it's not Circle then what you want to do? the same about the functions __eq__, __lt__, __gt__
             self.area += other.area
     def __eq__(self, other):
         if isinstance(other, Circle):
