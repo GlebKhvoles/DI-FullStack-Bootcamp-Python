@@ -31,7 +31,7 @@ class Currency:
         return self.__str__()
 
     def __add__(self, other):
-        if isinstance(other, Currency):
+        if isinstance(other, Currency): #what if the type is not Currency at this case you need to handle it
             if self.currency == other.currency:
                 self.amount += other.amount
             else:
