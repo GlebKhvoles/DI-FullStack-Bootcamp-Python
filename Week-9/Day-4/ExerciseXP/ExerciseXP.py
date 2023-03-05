@@ -4,10 +4,11 @@ class Human():
 		self.age = age
 		self.living_place = living_place
 	def move(self, building):
-		self.living_place = building
+		self.living_place = building # at this case you need to remove him form the of building inhabitants
 		building.inhabitants.append(self)
 
 class Building():
+	# for type annotaions use List from typing rather than list
 	def __init__(self, address: str, inhabitants: list = []):
 		self.address = address
 		self.inhabitants = inhabitants
