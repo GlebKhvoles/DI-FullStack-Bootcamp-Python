@@ -4,11 +4,11 @@ class Human:
 		self.name = name
 		self.age = age
 		self.priority = priority
-		if blood_type not in ['A', 'B', 'AB', 'O']:
+		if blood_type not in ['A', 'B', 'AB', 'O']: # it's better to export this code to external function
 			raise ValueError(f'There is no type of blood like that')
 		self.blood_type = blood_type
 		self.family = family
-	def add_family_member(self, person):
+	def add_family_member(self, person): # there is a bug at this function, le'ts say that we have the following: member A, B, C for A his family member is B and we add C as family member to A then we need to add it also to B
 		self.family.append(person)
 		person.family.append(self)
 
