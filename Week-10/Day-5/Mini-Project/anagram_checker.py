@@ -14,14 +14,14 @@ class AnagramChecker:
 	def	is_valid_word(self, word):
 		if word in self.words_list:
 			return True
-		else:
+		else: # this else it's redundant because we do return at one line beofre, please remove it
 			return False
 
 	def get_anagrams(self, word):
 		if not self.is_valid_word(word):
 			print(f'The given word is not exist', word)
 			return []
-		else:
+		else: # the same here
 			anagrams = itertools.permutations(word)
 			return [''.join(anagram) for anagram in list(anagrams)]
 
