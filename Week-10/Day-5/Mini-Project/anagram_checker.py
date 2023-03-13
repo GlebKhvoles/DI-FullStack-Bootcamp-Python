@@ -14,8 +14,6 @@ class AnagramChecker:
 	def	is_valid_word(self, word):
 		if word in self.words_list:
 			return True
-		else:
-			return False
 
 	def get_anagrams(self, word):
 		if not self.is_valid_word(word):
@@ -29,7 +27,6 @@ class AnagramChecker:
 		if word1 != word2:
 			if word1 in self.get_anagrams(word2):
 				return True
-		return False
 
 ana = AnagramChecker.init_anagram_checker()
 
