@@ -1,0 +1,4 @@
+--SELECT item, price FROM items ORDER BY price ASC; 
+--SELECT item, price FROM items WHERE price >= 80 ORDER BY price DESC;
+--SELECT customer_name, customer_surname FROM customers ORDER BY customer_name ASC limit 3;
+--SELECT customer_surname FROM customers ORDER BY customer_surname DESC;
